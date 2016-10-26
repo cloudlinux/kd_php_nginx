@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+ROOT=/usr/src/app
+test -d $ROOT || mkdir $ROOT
+
+exec /usr/sbin/php5-fpm
